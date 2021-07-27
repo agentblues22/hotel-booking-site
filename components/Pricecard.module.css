@@ -1,0 +1,82 @@
+.pricecard_main {
+  padding: 50px 50px 50px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pricecard_container {
+  border-radius: 0px 20px 0px 0px;
+}
+.pricecard_sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 2px 2px 15px 2px rgba(211, 190, 190, 0.8);
+  border-radius: 0px 20px;
+}
+.pricecard_paragraph {
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  border-radius: 0px 0px 0px 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(12, 27, 10);
+
+  font-size: 15px;
+}
+.pricecard_text {
+  margin: 20px 0px 0px 0px;
+}
+.prices_rating {
+  font-size: 13px;
+  display: flex;
+  margin: 50px 20px 20px 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.classes.rating {
+  margin: 20px;
+}
+
+.classes.price {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pricecard_main {
+    padding: 30px 10px 30px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pricecard_container {
+    border-radius: 0px 10px;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .pricecard_main {
+    margin: 50px 50px 50px 50px;
+    padding: 30px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .pricecard_container {
+    border-radius: 0px 10px;
+  }
+}

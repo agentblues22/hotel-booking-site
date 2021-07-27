@@ -1,0 +1,25 @@
+{
+  "name": "kukku-residency",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "17.0.2",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^4.2.0",
+    "react-slick": "^0.28.1",
+    "react-spinners": "^0.11.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "eslint": "7.30.0",
+    "eslint-config-next": "11.0.1"
+  }
+}
