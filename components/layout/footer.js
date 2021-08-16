@@ -1,6 +1,7 @@
 import classes from "./footer.module.css";
 import Link from "next/Link";
 import Image from "next/image";
+import Map from "../layout/map";
 
 function Footer() {
   return (
@@ -13,16 +14,19 @@ function Footer() {
               some paragraph that makes some sense especially when it talks
               about the residency
             </p>
+            <div>
+              <Map />
+            </div>
           </div>
           <div className={classes.grid_item_middle}>
-            <Link href="#home">
+            <Link href="/">
               <a className={classes.footerlinks}>home</a>
             </Link>
-            <Link href="#home">
+            <Link href="/bookings">
               <a className={classes.footerlinks}>Booking</a>
             </Link>
-            <Link href="#home">
-              <a className={classes.footerlinks}>About Us</a>
+            <Link href="/discover">
+              <a className={classes.footerlinks}>Discover</a>
             </Link>
             <Link href="#home">
               <a className={classes.footerlinks}>Contact Us</a>
@@ -34,10 +38,20 @@ function Footer() {
             <h4 className={classes.heading_four}>email:</h4>
             <p className={classes.heading_four}>example@xyz.com</p>
             <div className={classes.socialcontainer}>
-              <a className={classes.img1} href="www.twitter.com" rel="noopener noreferrer" target="_blank" >
+              <a
+                className={classes.img1}
+                href="https://www.twitter.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <Image src="/twitter.png" width="30px" height="30px" />
               </a>
-              <a className={classes.img2} href="www.facebook.com" rel="noopener noreferrer" target="_blank">
+              <a
+                className={classes.img2}
+                href="https://www.facebook.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <Image src="/facebook.png" width="30px" height="30px" />
               </a>
             </div>

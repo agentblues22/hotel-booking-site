@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/Link";
 import Accordion from "../components/accordion";
 
 import Gallery from "../components/gallery";
@@ -8,6 +9,7 @@ import Map from "../components/layout/map";
 import classes from "../styles/Home.module.css";
 import Availability from "../components/Availability";
 import Pricecard from "../components/Pricecard";
+import Collage from "../components/Collage";
 
 export default function Home() {
   return (
@@ -28,8 +30,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={classes.imagegallery_section}>
-        <Pricecard />
+      <section className={classes.pricecard_section}>
+        <div className={classes.pricecard_contain}>
+          <Pricecard />
+        </div>
       </section>
       <section className={classes.section_container}>
         <div className={classes.alignment_container}>
@@ -45,20 +49,35 @@ export default function Home() {
                   adipiscing elit. In urna lectus, mattis non accumsan in,
                   tempor dictum neque.{" "}
                 </p>
-                <button className={classes.galleryCTA}>Learn More</button>
+                <Link href="/discover">
+                  <button className={classes.galleryCTA}>Learn More</button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className={classes.mapsection}>
-        <div className={classes.map_part}>
-          <div className={classes.map_paragraph}>
-            <p>find us on the map.</p>
+      <section className={classes.collage_sect}>
+        <div className={classes.collage_section}>
+          <div className={classes.collage_text}>
+            Explore points of interests nearby!
+            <div className={classes.paragraphCTA}>
+              <p>
+                lorem ipsum dolor amietLorem ipsum dolor sit amet, consectetur
+                adipiscing elit. In urna lectus, mattis non accumsan in, tempor
+                dictum neque.{" "}
+              </p>
+              <Link href="/Explore">
+                <button className={classes.galleryCTA}>Explore</button>
+              </Link>
+            </div>
           </div>
-          <Map />
+          <div className={classes.collage_contain}>
+            <Collage />
+          </div>
         </div>
       </section>
+
       <section className={classes.FAQ_section}>
         <div className={classes.accordion_container}>
           <div className={classes.faq_heading}>Frequently Asked Questions</div>

@@ -16,11 +16,11 @@ function MainNavigation() {
           <Link href="/">
             <a className={classes.menu_links}>Home</a>
           </Link>
-          <Link href="/homepage">
+          <Link href="/bookings">
             <a className={classes.menu_links}>Booking</a>
           </Link>
-          <Link href="#home">
-            <a className={classes.menu_links}>About Us</a>
+          <Link href="/discover">
+            <a className={classes.menu_links}>Discover</a>
           </Link>
           <Link href="#home">
             <a className={classes.menu_links_contact}>Contact Us</a>
