@@ -22,13 +22,11 @@ function Footer() {
             <Link href="/">
               <a className={classes.footerlinks}>home</a>
             </Link>
-            <Link href="/bookings">
-              <a className={classes.footerlinks}>Booking</a>
-            </Link>
+
             <Link href="/discover">
               <a className={classes.footerlinks}>Discover</a>
             </Link>
-            <Link href="#home">
+            <Link href="/contact">
               <a className={classes.footerlinks}>Contact Us</a>
             </Link>
           </div>

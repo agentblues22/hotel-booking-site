@@ -25,9 +25,7 @@ export default function Home() {
             adipiscing elit. In urna lectus, mattis non accumsan in, tempor
             dictum neque.
           </hero>
-          <div>
-            <Availability />
-          </div>
+          <div></div>
         </div>
       </section>
       <section className={classes.pricecard_section}>
