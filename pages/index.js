@@ -1,11 +1,10 @@
-import Link from "next/link";
+import Link from "next/Link";
 import Accordion from "../components/accordion";
 
 import Gallery from "../components/gallery";
-import Map from "../components/layout/map";
 
 import classes from "../styles/Home.module.css";
-import Availability from "../components/Availability";
+
 import Pricecard from "../components/Pricecard";
 import Collage from "../components/Collage";
 
