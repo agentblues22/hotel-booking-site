@@ -1,4 +1,5 @@
 module.exports = {
+  webpack5: false,
   reactStrictMode: false,
 
   eslint: {
