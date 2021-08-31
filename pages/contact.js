@@ -25,7 +25,7 @@ export default function Contact() {
       <div className={classes.main_page}>
         <div className={classes.main_container}>
           <form className={classes.form_main} onSubmit={handleSubmit(onSubmit)}>
-            <label htmlfor="fname">First Name</label>
+            <label htmlFor="fname">First Name</label>
             <input
               className={classes.form_text}
               type="text"
@@ -35,7 +35,7 @@ export default function Contact() {
               placeholder="Your name.."
             />
 
-            <label htmlfor="lname">Last Name</label>
+            <label htmlFor="lname">Last Name</label>
             <input
               className={classes.form_text}
               type="text"
@@ -44,7 +44,7 @@ export default function Contact() {
               {...register("lastname", { required: true })}
               placeholder="Your last name.."
             ></input>
-            <label htmlfor="lname">What is your Query?</label>
+            <label htmlFor="lname">What is your Query?</label>
             <textarea
               className={classes.form_textarea}
               id="query"

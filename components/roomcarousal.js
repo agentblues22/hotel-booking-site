@@ -31,13 +31,15 @@ const Roomcarousal = (props) => {
     className: 1,
   };
   const photos = props.images;
+  const id = props.id;
   return (
     <div className={classes.App}>
       <Slider {...settings}>
         {photos.map((photo) => {
           return (
-            <div className={classes.carousel_shadow}>
+            <div key={photo.id} className={classes.carousel_shadow}>
               <Image
+                alt="kuku-residency rooms"
                 className="carouselimagecontainer"
                 src={photo.image}
                 width="500px"

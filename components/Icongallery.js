@@ -6,26 +6,31 @@ function Icongallery() {
     {
       description: "Wifi",
       url: "/icons/Wifi.png",
+      key: "01",
     },
     {
       description: "Taxi",
       url: "/icons/taxi.png",
+      key: "02",
     },
     {
       description: "Housekeeping",
       url: "/icons/housekeeping.png",
+      key: "03",
     },
     {
       description: "AC and Non-AC",
       url: "/icons/AC.png",
+      key: "04",
     },
   ];
   return (
     <div className={classes.imagegallery_main}>
       {photos.map((photo) => {
         return (
-          <div className={classes.imagegallery_sub}>
+          <div key={photo.key} className={classes.imagegallery_sub}>
             <Image
+              alt={photo.description}
               className={classes.imagegallery_container}
               src={photo.url}
               width="60px"

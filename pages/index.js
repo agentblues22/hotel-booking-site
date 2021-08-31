@@ -44,7 +44,7 @@ export default function Home() {
                   adipiscing elit. In urna lectus, mattis non accumsan in,
                   tempor dictum neque.{" "}
                 </p>
-                <Link href="/discover">
+                <Link href="/discover" passHref>
                   <button className={classes.galleryCTA}>Learn More</button>
                 </Link>
               </div>
@@ -62,7 +62,7 @@ export default function Home() {
                 adipiscing elit. In urna lectus, mattis non accumsan in, tempor
                 dictum neque.{" "}
               </p>
-              <Link href="/Explore">
+              <Link href="/Explore" passHref>
                 <button className={classes.galleryCTA}>Explore</button>
               </Link>
             </div>

@@ -42,7 +42,12 @@ function Footer() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Image src="/twitter.png" width="30px" height="30px" />
+                <Image
+                  alt="twitter"
+                  src="/twitter.png"
+                  width="30px"
+                  height="30px"
+                />
               </a>
               <a
                 className={classes.img2}
@@ -50,7 +55,12 @@ function Footer() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Image src="/facebook.png" width="30px" height="30px" />
+                <Image
+                  alt="facebook"
+                  src="/facebook.png"
+                  width="30px"
+                  height="30px"
+                />
               </a>
             </div>
           </div>

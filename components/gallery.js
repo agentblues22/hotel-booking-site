@@ -9,16 +9,19 @@ const photos = [
     name: "photo 1",
     url: "/carouselphotos/photo 1.jpg",
     desc: "photo descrption",
+    key: "01",
   },
   {
     name: "photo 2",
     url: "/carouselphotos/photo 2.jpg",
     desc: "photo descrption",
+    key: "02",
   },
   {
     name: "photo 3",
     url: "/carouselphotos/photo 3.jpg",
     desc: "photo descrption",
+    key: "03",
   },
 ];
 const NextArrow = ({ onClick }) => {
@@ -52,8 +55,9 @@ const Gallery = () => {
       <Slider {...settings}>
         {photos.map((photo) => {
           return (
-            <div className={classes.carousel_shadow}>
+            <div key={photo.key} className={classes.carousel_shadow}>
               <Image
+                alt={photo.name}
                 className="carouselimagecontainer"
                 src={photo.url}
                 width="500px"

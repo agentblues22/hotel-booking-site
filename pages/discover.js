@@ -68,6 +68,7 @@ export default function Discover() {
               className={classes.room_container}
             >
               <Roomcarousal
+                id={photo.id}
                 images={photo.url}
                 className={classes.room_imgcontainer}
               />

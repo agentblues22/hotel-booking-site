@@ -5,7 +5,7 @@ function Availability() {
     <div className={classes.main_formcontainer}>
       <form className={classes.form_main} action="/action_page.php">
         <div className={classes.form_itemcontainer}>
-          <label className={classes.form_label} for="fname">
+          <label className={classes.form_label} htmlFor="fname">
             From:
           </label>
           <input
@@ -16,7 +16,7 @@ function Availability() {
           />
         </div>
         <div className={classes.form_itemcontainer}>
-          <label className={classes.form_label} for="lname">
+          <label className={classes.form_label} htmlFor="lname">
             To:
           </label>
           <input
@@ -27,7 +27,7 @@ function Availability() {
           />
         </div>
         <div className={classes.form_itemcontainer}>
-          <label className={classes.form_label} for="country">
+          <label className={classes.form_label} htmlFor="country">
             type of room:
           </label>
           <select className={classes.form_item} id="country" name="country">

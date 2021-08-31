@@ -1,8 +1,8 @@
-import { BsGrid } from "react-icons/bs";
+//import { BsGrid } from "react-icons/bs";
 import classes from "./booking.module.css";
 import { useForm } from "react-hook-form";
-import { Alert } from "react-bootstrap";
-import { hasBasePath } from "next/dist/next-server/lib/router/router";
+//import { Alert } from "react-bootstrap";
+//import { hasBasePath } from "next/dist/next-server/lib/router/router";
 
 const Booking = () => {
   const { register, handleSubmit } = useForm();
@@ -21,7 +21,7 @@ const Booking = () => {
         >
           <div className={classes.grid_content1}>
             <div>
-              <label className={classes.label_text} for="fname">
+              <label className={classes.label_text} htmlFor="fname">
                 First Name
               </label>
             </div>
@@ -35,7 +35,7 @@ const Booking = () => {
           </div>
           <div className={classes.grid_content2}>
             <div>
-              <label className={classes.label_text} for="lname">
+              <label className={classes.label_text} htmlFor="lname">
                 Last Name
               </label>
             </div>
@@ -49,7 +49,7 @@ const Booking = () => {
           </div>
           <div className={classes.grid_content3}>
             <div>
-              <label className={classes.label_text} for="room_type">
+              <label className={classes.label_text} htmlFor="room_type">
                 Room Type
               </label>
             </div>
@@ -67,7 +67,7 @@ const Booking = () => {
           </div>
           <div className={classes.grid_content4}>
             <div>
-              <label className={classes.label_text} for="from_date">
+              <label className={classes.label_text} htmlFor="from_date">
                 From
               </label>
             </div>
@@ -80,7 +80,7 @@ const Booking = () => {
           </div>
           <div className={classes.grid_content5}>
             <div>
-              <label className={classes.label_text} for="to_date">
+              <label className={classes.label_text} htmlFor="to_date">
                 To
               </label>
             </div>
