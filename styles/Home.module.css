@@ -134,7 +134,7 @@
 /*hero section*/
 
 .hero_section {
-  background-image: url("C:/Users/george/OneDrive/Desktop/kuku residency website/kukku-residency/public/carouselphotos/photo 5.jpg");
+  background-image: url("../public/carouselphotos/photo\ 5.jpg");
   background-position: center;
 }
 .hero_wrapper {
