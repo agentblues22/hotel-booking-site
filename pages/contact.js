@@ -1,8 +1,8 @@
-import Link from "next/Link";
+import Link from "next/link";
 import classes from "../styles/contact.module.css";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-import { Alert } from "react-bootstrap";
+//import { Alert } from "react-bootstrap";
 import axios from "axios";
 
 export default function contact() {
