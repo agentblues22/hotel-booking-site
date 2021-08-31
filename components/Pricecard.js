@@ -9,21 +9,24 @@ function Pricecard() {
       url: "/carouselphotos/photo 3.jpg",
       price: "1100",
       rating: "4.0/5",
+      key: "01",
     },
     {
       description: "room type 2",
       url: "/carouselphotos/photo 2.jpg",
       price: "1000",
       rating: "4.0/5",
+      key: "02",
     },
   ];
   return (
     <div className={classes.pricecard_main}>
       {photos.map((photo) => {
         return (
-          <Link href="/discover">
+          <Link key={photo.key} href="/discover">
             <div className={classes.pricecard_sub}>
               <Image
+                alt={photo.description}
                 className={classes.pricecard_container}
                 src={photo.url}
                 width="500px"
