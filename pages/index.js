@@ -1,6 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 import Accordion from "../components/accordion";
 
 import Gallery from "../components/gallery";
