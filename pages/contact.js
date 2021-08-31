@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NextLink from "next/link";
 import classes from "../styles/contact.module.css";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
@@ -76,32 +76,32 @@ export default function Contact() {
             </div>
             <div className={classes.link_object}>
               <div className={classes.subheading}>Phone:</div>
-              <Link href="#" passHref>
+              <NextLink href="#" passHref>
                 <div>0987654321</div>
-              </Link>
+              </NextLink>
             </div>
             <div className={classes.link_object}>
               <div className={classes.subheading}>Socials:</div>
               <div className={classes.social_media}>
                 <div>
-                  <Link href="https://www.facebook.com" passHref>
+                  <NextLink href="https://www.facebook.com" passHref>
                     <Image
                       alt="facebook"
                       src="/facebook_black.png"
                       width="30px"
                       height="30px"
                     />
-                  </Link>
+                  </NextLink>
                 </div>
                 <div>
-                  <Link href="https://www.twitter.com" passHref>
+                  <NextLink href="https://www.twitter.com" passHref>
                     <Image
                       alt="twitter"
                       src="/twitter_black.png"
                       width="30px"
                       height="30px"
                     />
-                  </Link>
+                  </NextLink>
                 </div>
               </div>
             </div>

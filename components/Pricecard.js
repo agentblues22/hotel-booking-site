@@ -1,6 +1,6 @@
 import Image from "next/image";
 import classes from "./Pricecard.module.css";
-import Link from "next/Link";
+import NextLink from "next/link";
 
 function Pricecard() {
   const photos = [
@@ -23,7 +23,7 @@ function Pricecard() {
     <div className={classes.pricecard_main}>
       {photos.map((photo) => {
         return (
-          <Link key={photo.key} href="/discover">
+          <NextLink key={photo.key} href="/discover">
             <div className={classes.pricecard_sub}>
               <Image
                 alt={photo.description}
@@ -44,7 +44,7 @@ function Pricecard() {
                 </div>
               </div>
             </div>
-          </Link>
+          </NextLink>
         );
       })}
     </div>

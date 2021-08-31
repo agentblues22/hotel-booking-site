@@ -1,5 +1,5 @@
 import classes from "./footer.module.css";
-import Link from "next/Link";
+import NextLink from "next/link";
 import Image from "next/image";
 import Map from "../layout/map";
 
@@ -19,16 +19,16 @@ function Footer() {
             </div>
           </div>
           <div className={classes.grid_item_middle}>
-            <Link href="/">
+            <NextLink href="/">
               <a className={classes.footerlinks}>home</a>
-            </Link>
+            </NextLink>
 
-            <Link href="/discover">
+            <NextLink href="/discover">
               <a className={classes.footerlinks}>Discover</a>
-            </Link>
-            <Link href="/contact">
+            </NextLink>
+            <NextLink href="/contact">
               <a className={classes.footerlinks}>Contact Us</a>
-            </Link>
+            </NextLink>
           </div>
           <div className={classes.grid_item_last}>
             <h4 className={classes.heading_four}>Address:</h4>

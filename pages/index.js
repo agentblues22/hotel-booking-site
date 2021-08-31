@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NextLink from "next/link";
 import Accordion from "../components/accordion";
 
 import Gallery from "../components/gallery";
@@ -44,9 +44,9 @@ export default function Home() {
                   adipiscing elit. In urna lectus, mattis non accumsan in,
                   tempor dictum neque.{" "}
                 </p>
-                <Link href="/discover" passHref>
+                <NextLink href="/discover" passHref>
                   <button className={classes.galleryCTA}>Learn More</button>
-                </Link>
+                </NextLink>
               </div>
             </div>
           </div>
@@ -62,9 +62,9 @@ export default function Home() {
                 adipiscing elit. In urna lectus, mattis non accumsan in, tempor
                 dictum neque.{" "}
               </p>
-              <Link href="/Explore" passHref>
+              <NextLink href="/Explore" passHref>
                 <button className={classes.galleryCTA}>Explore</button>
-              </Link>
+              </NextLink>
             </div>
           </div>
           <div className={classes.collage_contain}>
