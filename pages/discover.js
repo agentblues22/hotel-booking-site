@@ -62,7 +62,11 @@ export default function Discover() {
       <div className={classes.room_main}>
         {photos.map((photo) => {
           return (
-            <div id={photo.id} className={classes.room_container}>
+            <div
+              key={photo.id}
+              id={photo.id}
+              className={classes.room_container}
+            >
               <Roomcarousal
                 images={photo.url}
                 className={classes.room_imgcontainer}

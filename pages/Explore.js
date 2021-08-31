@@ -63,8 +63,9 @@ function Explore() {
       <div className={classes.POI_main}>
         {photos.map((photo) => {
           return (
-            <div id={photo.id} className={classes.POI_container}>
+            <div key={photo.id} id={photo.id} className={classes.POI_container}>
               <Image
+                alt={photo.heading}
                 className={classes.POI_imgcontainer}
                 src={photo.url}
                 width="800px"

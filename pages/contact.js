@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 //import { Alert } from "react-bootstrap";
 import axios from "axios";
 
-export default function contact() {
+export default function Contact() {
   const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = (data) => {
@@ -25,7 +25,7 @@ export default function contact() {
       <div className={classes.main_page}>
         <div className={classes.main_container}>
           <form className={classes.form_main} onSubmit={handleSubmit(onSubmit)}>
-            <label for="fname">First Name</label>
+            <label htmlfor="fname">First Name</label>
             <input
               className={classes.form_text}
               type="text"
@@ -35,7 +35,7 @@ export default function contact() {
               placeholder="Your name.."
             />
 
-            <label for="lname">Last Name</label>
+            <label htmlfor="lname">Last Name</label>
             <input
               className={classes.form_text}
               type="text"
@@ -44,7 +44,7 @@ export default function contact() {
               {...register("lastname", { required: true })}
               placeholder="Your last name.."
             ></input>
-            <label for="lname">What is your Query?</label>
+            <label htmlfor="lname">What is your Query?</label>
             <textarea
               className={classes.form_textarea}
               id="query"
@@ -76,7 +76,7 @@ export default function contact() {
             </div>
             <div className={classes.link_object}>
               <div className={classes.subheading}>Phone:</div>
-              <Link href="#">
+              <Link href="#" passHref>
                 <div>0987654321</div>
               </Link>
             </div>
@@ -84,8 +84,9 @@ export default function contact() {
               <div className={classes.subheading}>Socials:</div>
               <div className={classes.social_media}>
                 <div>
-                  <Link href="https://www.facebook.com">
+                  <Link href="https://www.facebook.com" passHref>
                     <Image
+                      alt="facebook"
                       src="/facebook_black.png"
                       width="30px"
                       height="30px"
@@ -93,8 +94,9 @@ export default function contact() {
                   </Link>
                 </div>
                 <div>
-                  <Link href="https://www.twitter.com">
+                  <Link href="https://www.twitter.com" passHref>
                     <Image
+                      alt="twitter"
                       src="/twitter_black.png"
                       width="30px"
                       height="30px"
